@@ -53,7 +53,7 @@ const laptop = {
 const HeroSection = () => {
   return (
     <div className="overflow-hidden ">
-      <Container className="grid  grid-cols-1 lg:grid-cols-2 h-[calc(100vh-64px)] place-content-center ">
+      <Container className="grid  grid-cols-1 lg:grid-cols-2 h-[calc(100vh-64px)] place-content-center mt-16">
         <motion.div variants={intro} initial="hidden" animate="visible">
           <motion.h1
             className="text-5xl lg:text-8xl font-bold text-nowrap"

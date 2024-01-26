@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div>
       <motion.header
-        className="h-16 fixed w-full z-[999]"
+        className="h-16 fixed w-full z-[999] bg-white"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1 }}
