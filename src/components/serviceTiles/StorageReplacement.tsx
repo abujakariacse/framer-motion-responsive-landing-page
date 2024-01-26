@@ -1,7 +1,7 @@
 import useScrollGrow from "@/hooks/useScrollGrow";
 import { motion } from "framer-motion";
 
-const BatteryReplacement = () => {
+const StorageReplacement = () => {
   const { containerRef, styles } = useScrollGrow();
 
   return (
@@ -13,4 +13,4 @@ const BatteryReplacement = () => {
   );
 };
 
-export default BatteryReplacement;
+export default StorageReplacement;
