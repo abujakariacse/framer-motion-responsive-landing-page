@@ -12,6 +12,6 @@ import axios from "axios";
 
 // using axios
 export const getServices = async () => {
-  const result = await axios.get("http://localhost:5000/api/v1/servicess");
+  const result = await axios.get("http://localhost:5000/api/v1/services");
   return result;
 };
