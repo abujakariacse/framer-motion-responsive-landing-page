@@ -12,25 +12,10 @@ import {
 import Container from "@/components/Container";
 import { Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useGetService } from "@/api/admin/service/service.hook";
 
 const ServiceList = () => {
-  const {
-    data: services,
-    isLoading,
-    isError,
-  } = useQuery({
-    queryKey: ["services"],
-    queryFn: getServices,
-    select: (datas) => {
-      const services = datas?.data.data.map((item) => ({
-        id: item?._id,
-        name: item?.name,
-        description: item?.description,
-        price: item?.price,
-      }));
-      return services;
-    },
-  });
+  const { data: services, isLoading, isError } = useGetService();
 
   if (isLoading) {
     return <p>Loading...</p>;
